@@ -1,4 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import styled from 'styled-components'
+
+console.log('INDEX')
+
+const RedLink = styled.a`
+  color: red;
+`
 
 export default function Home() {
   return (
@@ -10,7 +18,18 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+            Read{' '}
+            <Link href="/posts/first-post">
+                <a>the first post page</a>
+            </Link>
+        </h1>
+
+        or
+
+        <h1 className="title">
+            <Link href="/posts/first-post" as="somePrettyUrl" passHref>
+                <RedLink>the first post page</RedLink>
+            </Link>
         </h1>
 
         <p className="description">
