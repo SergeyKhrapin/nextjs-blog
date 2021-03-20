@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styled from 'styled-components'
 
 console.log('INDEX')
@@ -73,10 +74,23 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
+
+
       </footer>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quisquam aliquam reprehenderit doloremque reiciendis nulla harum voluptate vitae voluptatum libero esse quasi quis nobis ad accusantium cupiditate natus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quisquam aliquam reprehenderit doloremque reiciendis nulla harum voluptate vitae voluptatum libero esse quasi quis nobis ad accusantium cupiditate natus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quisquam aliquam reprehenderit doloremque reiciendis nulla harum voluptate vitae voluptatum libero esse quasi quis nobis ad accusantium cupiditate natus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quisquam aliquam reprehenderit doloremque reiciendis nulla harum voluptate vitae voluptatum libero esse quasi quis nobis ad accusantium cupiditate natus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore quisquam aliquam reprehenderit doloremque reiciendis nulla harum voluptate vitae voluptatum libero esse quasi quis nobis ad accusantium cupiditate natus similique.</p>
+
+        {/* This image is loaded only when it is in the viewport */}
+        <Image
+            src="/images/profile.jpg"
+            width="200"
+            height="200"
+            alt="image" />
 
       <style jsx>{`
         .container {
