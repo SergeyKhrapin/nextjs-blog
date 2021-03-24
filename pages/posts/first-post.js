@@ -4,7 +4,8 @@ import Layout from '../../components/layout'
 
 console.log('FIRST_POST')
 
-export default function FirstPost() {
+export default function FirstPost(props) {
+    console.log('props', props)
     return (
         <Layout>
             <Head>
